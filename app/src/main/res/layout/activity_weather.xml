@@ -3,6 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/bing_pic_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 <ScrollView
     android:id="@+id/weather_layout"
@@ -12,6 +17,7 @@
     android:overScrollMode="never">
 
     <LinearLayout
+        android:fitsSystemWindows="true"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
